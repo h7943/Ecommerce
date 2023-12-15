@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classy Shop</title>
+    <link rel="shortcut icon" href="Images/fav-icon.png" />
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+  </head>
+
+<body>
+  <header>
+    <nav class="navbar" id="myNavbar">
+      <div class="container">
+          <a href="index.html" class="logo"
+            ><img src="Images/logo.webp"
+          /></a>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="index.html"> Home </a>
+            </li>
+            <li class="navbar-item">
+              <a href="about.html"> About</a>
+            </li>
+            <li class="navbar-item active">
+              <a href="shop.html">Shop</a>
+            </li>
+          </ul>
+          <a
+            href="javascript:void(0);"
+            class="nav-icon"
+            onclick="toggleNavbar()"
+          >
+            &#9776;
+          </a>
+          <div class="nav-btns">
+            <a href="" id="user_icon"><i class="fas fa-user user_prof"></i> </a><span id="inner_icon_text" class="user_prof"></span>
+            <a href="login.html" class="home_login">Login</a>  
+                        <a href="cart.html" class="cart-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span id="cartspan" class="item-count">0</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="search-nav">
+      <div class="container">
+        <div class="categories">
+          <div class="categories-button">
+            <i class="fa fa-bars"></i>
+            <span>SHOP BY CATEGORIES </span>
+          </div>
+          <ul></ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <main>
+      <section class="breadcrumbs" id="breadcrumbs">
+        
+      </section>
+      <section class="product-page">
+        <div class="container" id="product-container">
+
+        </div>
+      </section>
+      <section class="product-info">
+        <div class="container">
+          <div class="products-tabs">
+            <button onclick="openTab('tab1')" class="active">Description</button>
+            <button onclick="openTab('tab2')">Clients Comments</button>
+          </div>
+          
+          <div id="tab1" class="tab-details" style="display: block;">
+            <h4>Product Information</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, dolorum corrupti vero, officia ex omnis accusantium id iusto est nam blanditiis beatae quidem. Assumenda quae sed veniam doloribus animi minus quaerat, sint necessitatibus, nobis dolorem accusantium deleniti, minima molestiae fugiat et corporis provident natus perferendis beatae dolor tempora! Tempore eveniet, maiores porro sit aperiam corrupti similique quod vitae doloribus in quae ex error inventore. Facilis est saepe aut ad error magnam neque blanditiis doloremque vitae, provident fuga, enim illum molestiae illo id ullam. Accusamus fuga mollitia adipisci sed, eveniet possimus esse, deleniti tempore aperiam modi nisi blanditiis qui. Harum, molestias?</p>
+          </div>
+          
+          <div id="tab2" class="tab-details">
+            <h4>Comments</h4>
+            <div class="commentsContainer">
+
+            </div>
+
+          </div>
+          
+ 
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="Images/logo.webp" alt="" />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+              architecto animi ipsum porro dolorum, maiores ex provident
+              quibusdam blanditiis magni deleniti eum sequi libero tempore harum
+              quia maxime pariatur quam?
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <h3>Useful links</h3>
+            <ul>
+              <li>
+                <a href="shop.html">Shop</a>
+              </li>
+              <li>
+                <a href="about.html"> About </a>
+              </li>
+              <li>
+                <a href="login.html" class="home_login">Login</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h3>Contact us</h3>
+            <ul>
+              <li>
+                <i class="fa fa-location-arrow"></i>
+                Cairo, Egypt
+              </li>
+              <li>
+                <i class="fa fa-phone"></i>
+                01010101234
+              </li>
+
+              <li>
+                <i class="fa fa-mail-bulk"></i>
+                info@ClassyShop.com
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/api.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/style.js"></script>
+    <script src="fontawesome-free-5.15.4-web/js/all.min.js"></script>
+    <script src="js/init1.js" ></script>
+    <!-- <script src="js/user.js"></script> -->
+    <script src="js/init.js"></script>
+    <script src="js/jshop.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classy Shop</title>
+  <link rel="shortcut icon" href="Images/fav-icon.png" />
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css" />
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar" id="myNavbar">
+      <div class="container">
+        <a href="index.html" class="logo"><img src="Images/logo.webp" /></a>
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="index.html"> Home </a>
+          </li>
+          <li class="navbar-item">
+            <a href="about.html"> About</a>
+          </li>
+          <li class="navbar-item">
+            <a href="shop.html">Shop</a>
+          </li>
+        </ul>
+        <a href="javascript:void(0);" class="nav-icon" onclick="toggleNavbar()">
+          &#9776;
+        </a>
+        <div class="nav-btns">
+          <a href="login.html"><i class="fa fa-user"></i> Login</a>
+          <a href="cart.html" class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cartspan" class="item-count">0</span>
+          </a>
+        </div>
+      </div>
+      </div>
+    </nav>
+    <nav class="search-nav">
+      <div class="container">
+        <div class="categories">
+          <div class="categories-button">
+            <i class="fa fa-bars"></i>
+            <span>SHOP BY CATEGORIES </span>
+          </div>
+          <ul></ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="breadcrumbs" id="breadcrumbs">
+      <h2 class="breadcrumb-title">Login Here</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>Login</li>
+      </ul>
+    </section>
+    <section class="login-page">
+      <div class="container">
+        <form method="post" action="Submit" class="login">
+          <div class="row">
+            <div class="col-md-5 social-btns">
+              <a href="#" class="fb">
+                <i class="fab fa-facebook"></i> Login with Facebook
+              </a>
+              <a href="#" class="twitter ">
+                <i class="fab fa-twitter"></i> Login with Twitter
+              </a>
+              <a href="#" class="google ">
+                <i class="fab fa-google fa-fw"></i>
+                 Login with Google+
+              </a>
+            </div>
+            <div class="col-md-2 seperator">
+              <p>Or</p>
+            </div>
+            <div class="col-md-5 inputs">
+              <!-- <h3>Sign in manually:</h3> -->
+              <div class="loginMsg"></div>
+              <label for="username">User Name</label>
+              <input type="text" id="username" name="username" class="form-control" value="rshawe2">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" class="form-control" value="OWsTbMUgFc">
+              <div class="login-btn">
+              <button class="btn" id="log_in_bt">Login</button>
+              </div>
+            </div>
+
+          </div>
+        </form>
+
+        <!-- <div class="row">
+          <div class="col">
+            <a href="#" class="signup_btn">Sign up</a>
+          </div>
+          <div class="col">
+            <a href="#" class="signup_btn">Forgot password?</a>
+          </div>
+        </div> -->
+      </div>
+
+    </section>
+
+
+
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="Images/logo.webp" alt="" />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+            architecto animi ipsum porro dolorum, maiores ex provident
+            quibusdam blanditiis magni deleniti eum sequi libero tempore harum
+            quia maxime pariatur quam?
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <h3>Useful links</h3>
+          <ul>
+            <li>
+              <a href="shop.html">Shop</a>
+            </li>
+            <li>
+              <a href="about.html"> About </a>
+            </li>
+            <li>
+              <a href="login.html">login</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h3>Contact us</h3>
+          <ul>
+            <li>
+              <i class="fa fa-location-arrow"></i>
+              Cairo, Egypt
+            </li>
+            <li>
+              <i class="fa fa-phone"></i>
+              01010101234
+            </li>
+
+            <li>
+              <i class="fa fa-mail-bulk"></i>
+              info@ClassyShop.com
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/init1.js" ></script>
+  <script src="js/user.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/style.js"></script>
+  <script src="fontawesome-free-5.15.4-web/js/all.min.js"></script>
+</body>
+
+</html>
